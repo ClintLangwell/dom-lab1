@@ -1,0 +1,47 @@
+.coin-container {
+  display: flex;
+}
+.penny {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #cd7f32;
+}
+.nickel {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background-color: silver;
+}
+.dime {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: silver;
+}
+.quarter {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: silver;
+}
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.bulb {
+  border: 1px solid black;
+  width: 25%;
+  height: 100px;
+  border-radius: 15%;
+  background-color: slategray;
+  color: #fff;
+}
+
+.on {
+  background-color: yellow;
+  color: #000;
+}

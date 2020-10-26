@@ -7,6 +7,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="vending-machine">
+      <p class="display">Total Price: $0.00</p>
+      <button class="purchaseBtn mtDewBtn" data-price="2.00">
+        Mountain Dew $2.00
+      </button>
+      <button class="purchaseBtn monsterBtn" data-price="3.00">
+        Monster $3.00
+      </button>
+      <button class="purchaseBtn doritosBtn" data-price="1.50">
+        Doritos $1.50
+      </button>
+      <button class="purchaseBtn kitKatBtn" data-price="1.00">
+        Kit Kat $1.00
+      </button>
+    </div>
+    <div class="make-money">
+      <form action="" class="form">
+        <label for="howMany">How Many?</label>
+        <input type="number" name="howMany" id="howMany" placeholder="0" />
+        <label for="whichCoin">Which Coin Type?</label>
+        <select name="whichCoin" id="whichCoin">
+          <option value="penny" data-worth=".01">Penny</option>
+          <option value="nickel" data-worth=".05">Nickel</option>
+          <option value="dime" data-worth=".10">Dime</option>
+          <option value="quarter" data-worth=".25">Quarter</option>
+        </select>
+        <button class="btn subBtn">Make Money</button>
+      </form>
+      <div class="coin-container"></div>
+    </div>
+    <div class="light-bulb">
+      <div class="bulb center-text"><p>Light Bulb</p></div>
+      <button class="opBtn onBtn">On</button>
+      <button class="opBtn offBtn">Off</button>
+      <button class="opBtn toggleBtn">Toggle</button>
+      <button class="opBtn endBtn">End</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
