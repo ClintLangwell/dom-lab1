@@ -29,3 +29,27 @@ form.addEventListener("submit", (e) => {
   }
   form.reset();
 });
+
+//Light Bulb Code
+let bulb = document.querySelector(".bulb");
+let bulbContainer = document.querySelector(".light-bulb");
+let allOpBtn = document.querySelectorAll(".opBtn");
+let onBtn = document.querySelector(".onBtn");
+let offBtn = document.querySelector(".offBtn");
+let toggleBtn = document.querySelector(".toggleBtn");
+let endBtn = document.querySelector(".endBtn");
+onBtn.addEventListener("click", () => {
+  bulb.classList.add("on");
+});
+offBtn.addEventListener("click", () => {
+  bulb.classList.remove("on");
+});
+toggleBtn.addEventListener("click", () => {
+  bulb.classList.toggle("on");
+});
+endBtn.addEventListener("click", () => {
+  bulbContainer.removeChild(bulb);
+  allOpBtn.forEach((button) => {
+    button.disabled = true;
+  });
+});
